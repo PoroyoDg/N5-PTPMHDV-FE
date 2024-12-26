@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phone Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="logo">
+            <a href="frontend.html"><img src="images/logo.png" alt="Phone Shop Logo"></a>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Tìm kiếm sản phẩm...">
+            <button id="search-btn" type="submit">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="account-section">
+            <ul>
+               
+                <li><a href="favorites.html"><i class="fa fa-heart"></i> </a></li>
+                <li><a href="cart.html" class="title"><i class="fa fa-shopping-cart"></i>  <sup class="cart-quantity"></sup></a></li>
+                <li><a href="login-form.html" class="title"><i class="fa fa-user"></i></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="slider">
+        <div class="slider-wrapper">
+            <div class="slider-item active">
+                <div class="slider-img">
+                    <img src="images/slider_1.jpg" alt="Red Mi Y1">
+                </div>
+                <div class="slider-content">
+                    <div class="brand-img">
+                        <img src="images/mi_logo.png" alt="Mi Logo">
+                    </div>
+                    <h1 class="slider-title">Red Mi <span>Y1</span></h1>
+                    <p class="slider-description">LED Selfie-light | Fingerprint sensor | Snapdragon 435 octa-core processor</p>
+                    <p class="slider-price">$138.99</p>
+                </div>
+            </div>
+            <div class="slider-item">
+                <div class="slider-img">
+                    <img src="images/slider_2.jpg" alt="Google Pixel 2">
+                </div>
+                <div class="slider-content">
+                    <div class="brand-img">
+                        <img src="images/google_logo.png" alt="Google Logo">
+                    </div>
+                    <h1 class="slider-title">Google Pixel 2</h1>
+                    <p class="slider-description">Qualcomm Snapdragon 835 processor | Water-resistant | Up to 7 hours of battery.</p>
+                    <p class="slider-price">$938.10</p>
+                </div>
+            </div>
+            <div class="slider-item">
+                <div class="slider-img">
+                    <img src="images/slider_3.jpg" alt="iPhone 8 Plus">
+                </div>
+                <div class="slider-content">
+                    <div class="brand-img">
+                        <img src="images/apple_logo.png" alt="Apple Logo">
+                    </div>
+                    <h1 class="slider-title">iPhone 8 Plus</h1>
+                    <p class="slider-description">5.5 inch Retina HD Display | 12MP cameras | 64 GB & 256 GB ROM.</p>
+                    <p class="slider-price">$759.64</p>
+                </div>
+            </div>
+        </div>
+        <button class="slider-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="slider-btn next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+
+    <main>
+        <section id="products">
+            <!-- Product list will be rendered here -->
+        </section>
+
+        <section id="product-detail" style="display: none;">
+            <!-- Product details will be displayed here -->
+        </section>
+    </main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <!-- Support Information -->
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 footer-widget">
+        <h3 class="footer-title">Thông tin hỗ trợ</h3>
+        <p>Phường Linh Trung, Thủ Đức<br>Thành phố Hồ Chí Minh, Việt Nam - 1955</p>
+
+
+
+          <p>Copyright © All Rights Reserved 2020 Template Design</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
